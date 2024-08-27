@@ -1,35 +1,3 @@
-.delete-button {
-    background-color: red;
-}
-.up-button {
-    background-color: orange;
-}
-.down-button {
-    background-color: blue;
-}
-.up-button, .delete-button,.down-button ,.add-button{
-    padding: 5px;
-    border-radius: 5px;
-    color: aliceblue;
-    margin-left: 10px;
-    border: none;
-    font-weight: 700;
-    cursor: pointer;
-}
-.up-button:hover, .delete-button:hover,.down-button:hover {
-    opacity: 0.5;
-
-}
-.add-button {
-    background-color: chartreuse;
-}
-input[type="text"] {
-    font-size: 1rem;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid gray;
-}
-li{
-    font-size: 1rem;
-    font-weight: 600;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
