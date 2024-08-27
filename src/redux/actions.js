@@ -33,9 +33,9 @@ export const filterToDos = (filter) => ({
     payload:{filter},
 });
 
-export const updateSearchTerm = (seartTerm) => ({
+export const updateSearchTerm = (searchTerm) => ({
     type:UPDATE_SEARCH_TERM,
-    payload:{seartTerm},
+    payload:{searchTerm},
 });
 
 
