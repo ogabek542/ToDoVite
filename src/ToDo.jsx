@@ -3,6 +3,7 @@ import {BsPlus,BsSearch} from "react-icons/bs"
 import { useDispatch } from "react-redux";
 import { addTodo } from "./redux/actions";
 import { updateSearchTerm } from "./redux/actions";
+import FilterButton from "./components/FilterButton";
 
 const ToDo = () => {
 
@@ -37,8 +38,9 @@ const ToDo = () => {
           <button onClick={handleAddToDoClick} className="ml-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"><BsPlus/></button>
         </div>
         {/* filter and search */}
-        <div>
-          <div className="flex items-center mb-4 ">
+        <div className="flex items-center justify-between">
+        <FilterButton/>
+          <div className="flex items-center mb-4">
           <input value={searchTerm} onChange={(e) => handleSearchChange(e.target.value)} type="text"  name="addTodoInput" id="addTodoInput" placeholder="Search" className="flex-grow p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"/>
           <button onClick={handleAddToDoClick} className="ml-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"><BsSearch/></button>
           </div>
